@@ -1,0 +1,136 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Main container styles */
+.main-container,
+.home-container,
+.editor-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tool container box */
+.tool-container  {
+  background-color: rgb(203, 196, 211);
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tool-container button{
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 10px;
+  
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  width: 100%;
+}
+.toolbar button
+
+.toolbar button,
+.download-buttons button,
+.label-actions button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toolbar button:hover,
+.download-buttons button:hover,
+.label-actions button:hover {
+  background-color: #45a049;
+}
+
+.toolbar button:disabled {
+  background-color: #da1616;
+  cursor: not-allowed;
+}
+.image-uploader{
+  justify-content: center;
+}
+
+
+/* Image uploader */
+.image-uploader input[type="file"] {
+  padding: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.download-buttons button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-buttons button:hover {
+  background-color: #45a049;
+}
+
+/* Image box */
+.image-box {
+  text-align: center;
+  margin: 20px auto;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .toolbar,
+  .download-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .label-input-container input {
+    width: 100%;
+  }
+
+  .tool-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
